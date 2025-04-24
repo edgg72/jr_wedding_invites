@@ -40,6 +40,16 @@ body {
   font-size: 20px;
 }
 
+.golden-text {
+  background: linear-gradient(#fff8dc, #f5d76e, #e6b800, #c49102, #f5d76e, #fff8dc);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 .ephesis-regular {
   font-family: "Ephesis", cursive;
   font-weight: 400;

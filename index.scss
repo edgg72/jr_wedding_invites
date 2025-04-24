@@ -45,6 +45,23 @@ body {
     }
 }
 
+.golden-text {
+    background: linear-gradient(
+      #fff8dc,   /* light cream */
+      #f5d76e,   /* light gold */
+      #e6b800,   /* strong gold */
+      #c49102,   /* deep gold */
+      #f5d76e,   /* light gold */
+      #fff8dc    /* highlight again */
+    );
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
 //fonts
 .ephesis-regular {
     font-family: "Ephesis", cursive;
