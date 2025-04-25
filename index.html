@@ -29,11 +29,18 @@
         <div class="intro-image"></div>
     </section>
     <section class="intro-2">
-        <div class="song button">
+        
+        <div class="audio-player">
+            <audio id="audio" preload="auto" controls>
+                <source src="./resources/song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <!--<div class="song button">
             <div class="play toPlay"></div>
             <div class="stop toStop display-none"></div>
             <div class="song-name cormorant-300">cancion</div>
-        </div>
+        </div>-->
         <div class="intro-2-container">
             <span class="male-leter cormorant-300">J</span>
             <!--   <img src="./resources/ramas.png" alt="">
@@ -75,24 +82,11 @@
         <div class="image"></div>
     </section>
     <script>
-        let boton = document.querySelector(".toPlay")
-
-        let etiquetaAudio = document.createElement("audio")
-          etiquetaAudio.setAttribute("src", "./resources/song.mp3")
-        boton.addEventListener("click", () => {
-          etiquetaAudio.play()
-          boton.classList.add("display-none")
-        let botonStop = document.querySelector(".toStop")
-            botonStop.classList.remove("display-none")
-        })
-
-        let botonStop = document.querySelector(".toStop")
-        botonStop.addEventListener("click", () => {
-          etiquetaAudio.pause()
-          botonStop.classList.add("display-none")
-        let botonPause = document.querySelector(".toPlay")
-            botonPause.classList.remove("display-none")
-        })
+        function playSong(songUrl) {
+    const audioPlayer = document.getElementById('audio');
+    audioPlayer.src = songUrl;
+    audioPlayer.play();
+}
     </script>
 </body>
 
