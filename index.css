@@ -28,6 +28,9 @@ body {
   text-align: right;
   font-size: 45px;
 }
+.intro-names-and {
+  color: #595959;
+}
 .intro-image {
   bottom: 0;
   position: relative;
@@ -36,6 +39,7 @@ body {
   height: 428px;
   background-size: 212%;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .intro-date {
   color: #595959;
@@ -156,7 +160,7 @@ body {
   background-image: url("./resources/jr_itinerary.png");
   background-size: cover;
   background-position: center;
-  width: 109%;
+  width: 100%;
   height: 62vh;
   bottom: 0px;
 }
