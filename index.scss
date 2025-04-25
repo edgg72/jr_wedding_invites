@@ -4,7 +4,8 @@ body {
     position: relative;
     width: 100%;
 }
-.display-none{
+
+.display-none {
     display: none;
 }
 
@@ -76,6 +77,7 @@ body {
             background-color: #000;
             color: #eeeeee;
             margin-bottom: 30px;
+
             .play {
                 background-image: url("./resources/play-button-arrowhead.png");
                 background-position: center;
@@ -83,16 +85,17 @@ body {
                 width: 20px;
                 height: 20px;
             }
-            .stop{
+
+            .stop {
                 width: 20px;
                 height: 20px;
                 background-color: #bf9000;
             }
-            
 
-            &-name{
 
-            margin-left: 5px;
+            &-name {
+
+                margin-left: 5px;
             }
         }
 
@@ -103,7 +106,8 @@ body {
             padding-left: 20px;
             height: 90%;
             padding-right: 20px;
-            .rama{
+
+            .rama {
                 background-image: url("./resources/ramas.png");
                 background-position: center;
                 background-size: cover;
@@ -111,7 +115,7 @@ body {
                 display: inline-block;
                 width: 30%;
                 height: 30%;
-                transform: translate(-30%, 45px) rotate(-90deg) 
+                transform: translate(-30%, 45px) rotate(-90deg)
             }
 
             .corintio {
@@ -119,6 +123,7 @@ body {
                 margin-top: 65%;
                 padding-bottom: 10px;
                 border-bottom: solid #000;
+
                 &-text {
                     text-align: justify;
                     color: #666666;
@@ -144,6 +149,7 @@ body {
 
                 .place {
                     margin-bottom: 10px;
+                    color: #595959;
                 }
 
                 .button {
@@ -151,6 +157,33 @@ body {
                 }
             }
         }
+    }
+}
+
+.itinerary {
+    font-size: 35px;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 35px;
+    color: #595959;
+    &-text{
+        margin-left: 30px;
+    }
+    .list{
+        font-size: 20px;
+        position: absolute;
+        z-index: 100;
+        margin-left: 10px;
+    }
+
+    .image{
+        position: absolute;
+        background-image: url("./resources/jr_itinerary.png");
+        background-size: cover;
+        background-position: center;
+        width: 109%;
+        height: 62vh;
+        bottom: 0px;
     }
 }
 

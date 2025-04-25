@@ -129,9 +129,36 @@ body {
 }
 .intro-2-container .wedding-info .place {
   margin-bottom: 10px;
+  color: #595959;
 }
 .intro-2-container .wedding-info .button {
   border: solid #000;
+}
+
+.itinerary {
+  font-size: 35px;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 35px;
+  color: #595959;
+}
+.itinerary-text {
+  margin-left: 30px;
+}
+.itinerary .list {
+  font-size: 20px;
+  position: absolute;
+  z-index: 100;
+  margin-left: 10px;
+}
+.itinerary .image {
+  position: absolute;
+  background-image: url("./resources/jr_itinerary.png");
+  background-size: cover;
+  background-position: center;
+  width: 109%;
+  height: 62vh;
+  bottom: 0px;
 }
 
 .button {
