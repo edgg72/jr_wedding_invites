@@ -28,6 +28,59 @@
         </div>
         <div class="intro-image"></div>
     </section>
+    <section class="intro-2">
+        <div class="song button">
+            <div class="play toPlay"></div>
+            <div class="stop toStop display-none"></div>
+            <div class="song-name cormorant-300">cancion</div>
+        </div>
+        <div class="intro-2-container">
+            <span class="male-leter cormorant-300">J</span>
+            <!--   <img src="./resources/ramas.png" alt="">
+            <img src="./resources/ramas.png" alt="">-->
+           <!-- <span class="rama"></span>
+            <span class="rama"></span> -->
+           
+            <div class="corintio">
+                <span class="female-leter cormorant-300">R</span>
+                <div class="corintio-text cormorant-300">El amor nunca se da por vencido, jamás pierde la fe, siempre tiene esperanzas
+                    y se mantiene firme en toda circunstancia.</div>
+                <div class="corintio-quote cormorant-300">1 Corintios 13:7</div>
+            </div>
+            <div class="wedding-info">
+                <div class="title cormorant-300">Ceremonia</div>
+                <div class="place cormorant-300">Iglesia San Luis Beltrán
+                </div>
+                <div class="button cormorant-300 button">Cómo llegar</div>
+            </div>
+            <div class="wedding-info">
+                <div class="title cormorant-300">Recepción</div>
+                <div class="place cormorant-300">Salón Social Conjunto Residencial Plazuela Mayor
+                </div>
+                <div class="button cormorant-300 button">Cómo llegar</div>
+            </div>
+        </div>
+    </section>
+    <script>
+        let boton = document.querySelector(".toPlay")
+
+        let etiquetaAudio = document.createElement("audio")
+          etiquetaAudio.setAttribute("src", "./resources/song.mp3")
+        boton.addEventListener("click", () => {
+          etiquetaAudio.play()
+          boton.classList.add("display-none")
+        let botonStop = document.querySelector(".toStop")
+            botonStop.classList.remove("display-none")
+        })
+
+        let botonStop = document.querySelector(".toStop")
+        botonStop.addEventListener("click", () => {
+          etiquetaAudio.pause()
+          botonStop.classList.add("display-none")
+        let botonPause = document.querySelector(".toPlay")
+            botonPause.classList.remove("display-none")
+        })
+    </script>
 </body>
 
 </html>
