@@ -9,27 +9,32 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./index.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Ephesis&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
-    <script src='main.js'></script>
 </head>
 
 <body>
     <section class="intro">
         <div class="intro-info">
-            <div class="intro-wedding ephesis-regular">Nuestra boda</div>
-            <div class="intro-names cormorant-300">
-                <div class="intro-names-man golden-text">JHONATAN</div>
-                <span class="intro-names-and cinzel-decorative-regular">&</span>
-                <span class="intro-names-woman golden-text">ROXANA</span>
+            <div class="intro-wedding eb-garamond-400">Nuestra boda</div>
+            
+                <div class="intro-names">
+                    <img src="./resources/names.png" alt="">
+                </div>
+            <div class="intro-date eb-garamond-400">21 . 06 . 25</div>
+            <div class="corintio">
+                <div class="corintio-text eb-garamond-400"><strong>El amor</strong> nunca se da por vencido, jamás
+                    pierde la
+                    fe, siempre tiene esperanzas
+                    y se mantiene firme en <strong>toda circunstancia.</strong></div>
+                <div class="corintio-quote eb-garamond-400">1 Corintios 13:7</div>
             </div>
-            <div class="intro-date ephesis-regular">21 . 06 . 25</div>
+        </div>
         </div>
         <div class="intro-image"></div>
     </section>
     <section class="intro-2">
-        
+
         <div class="audio-player">
             <audio id="audio" preload="auto" controls>
                 <source src="./resources/song.mp3" type="audio/mpeg">
@@ -39,54 +44,59 @@
         <!--<div class="song button">
             <div class="play toPlay"></div>
             <div class="stop toStop display-none"></div>
-            <div class="song-name cormorant-300">cancion</div>
+            <div class="song-name eb-garamond-400">cancion</div>
         </div>-->
         <div class="intro-2-container">
-            <span class="male-leter cormorant-300">J</span>
+            <span class="male-leter eb-garamond-400">J</span>
             <!--   <img src="./resources/ramas.png" alt="">
             <img src="./resources/ramas.png" alt="">-->
-           <!-- <span class="rama"></span>
+            <!-- <span class="rama"></span>
             <span class="rama"></span> -->
-           
-            <div class="corintio">
-                <span class="female-leter cormorant-300">R</span>
-                <div class="corintio-text cormorant-300">El amor nunca se da por vencido, jamás pierde la fe, siempre tiene esperanzas
-                    y se mantiene firme en toda circunstancia.</div>
-                <div class="corintio-quote cormorant-300">1 Corintios 13:7</div>
+
+
+            <div class="wedding-info">
+                <div class="title eb-garamond-400">Ceremonia</div>
+                <div class="place eb-garamond-400">Iglesia San Luis Beltrán
+                </div>
+                <div class="button eb-garamond-400 button">Cómo llegar</div>
             </div>
             <div class="wedding-info">
-                <div class="title cormorant-300">Ceremonia</div>
-                <div class="place cormorant-300">Iglesia San Luis Beltrán
+                <div class="title eb-garamond-400">Recepción</div>
+                <div class="place eb-garamond-400">Salón Social Conjunto Residencial Plazuela Mayor
                 </div>
-                <div class="button cormorant-300 button">Cómo llegar</div>
-            </div>
-            <div class="wedding-info">
-                <div class="title cormorant-300">Recepción</div>
-                <div class="place cormorant-300">Salón Social Conjunto Residencial Plazuela Mayor
-                </div>
-                <div class="button cormorant-300 button">Cómo llegar</div>
+                <div class="button eb-garamond-400 button">Cómo llegar</div>
             </div>
         </div>
     </section>
-    <section class="itinerary cormorant-300">
+    <section class="itinerary eb-garamond-400">
         <div class="itinerary-text">ITINERARIO</div>
         <div class="list">
             <ul>
-                <li><div>17:00 <br> Ceremonia </div></li>
-                <li><div>18:00 <br> Recepción </div></li>
-                <li><div>19:00 <br> Entrada de novios </div></li>
-                <li><div>20:00 <br> Cena </div></li>
-                <li><div>21:00 <br> Bailemos </div></li>
+                <li>
+                    <div>17:00 <br> Ceremonia </div>
+                </li>
+                <li>
+                    <div>18:00 <br> Recepción </div>
+                </li>
+                <li>
+                    <div>19:00 <br> Entrada de novios </div>
+                </li>
+                <li>
+                    <div>20:00 <br> Cena </div>
+                </li>
+                <li>
+                    <div>21:00 <br> Bailemos </div>
+                </li>
             </ul>
         </div>
         <div class="image"></div>
     </section>
     <script>
         function playSong(songUrl) {
-    const audioPlayer = document.getElementById('audio');
-    audioPlayer.src = songUrl;
-    audioPlayer.play();
-}
+            const audioPlayer = document.getElementById('audio');
+            audioPlayer.src = songUrl;
+            audioPlayer.play();
+        }
     </script>
 </body>
 

@@ -15,37 +15,61 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
   box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 100vh;
+}
+.intro-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .intro-wedding {
   font-size: 35px;
+  font-style: italic;
   text-align: center;
   padding-bottom: 20px;
   color: #595959;
 }
 .intro-names {
-  text-align: right;
-  font-size: 45px;
+  margin: 0 40px 0 40px;
 }
-.intro-names-and {
+.intro-names img {
+  position: relative;
+  width: 100%;
+}
+.intro-date {
   color: #595959;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+}
+.intro .corintio {
+  position: relative;
+  width: 50%;
+}
+.intro .corintio-text {
+  text-align: center;
+  color: #666666;
+  padding-bottom: 15px;
+}
+.intro .corintio-quote {
+  text-align: center;
+  color: #bf9000;
 }
 .intro-image {
   bottom: 0;
   position: relative;
   background-image: url("./resources/jr_intro.png");
   width: 100%;
-  height: 428px;
+  height: 100%;
   background-size: 212%;
   background-position: center;
   background-repeat: no-repeat;
-}
-.intro-date {
-  color: #595959;
-  padding-top: 20px;
-  text-align: center;
-  font-size: 20px;
 }
 .intro-2 {
   display: flex;
@@ -55,6 +79,7 @@ body {
   padding-top: 45px;
   padding-bottom: 45px;
   box-sizing: border-box;
+  position: relative;
 }
 .intro-2 .male-leter {
   position: absolute;
@@ -94,19 +119,6 @@ body {
   width: 30%;
   height: 30%;
   transform: translate(-30%, 45px) rotate(-90deg);
-}
-.intro-2-container .corintio {
-  position: relative;
-  margin-top: 65%;
-  padding-bottom: 10px;
-  border-bottom: solid #000;
-}
-.intro-2-container .corintio-text {
-  text-align: justify;
-  color: #666666;
-}
-.intro-2-container .corintio-quote {
-  color: #bf9000;
 }
 .intro-2-container .wedding-info {
   text-align: center;
@@ -173,6 +185,19 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+}
+
+.eb-garamond-400 {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+.eb-garamond-600 {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .ephesis-regular {
