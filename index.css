@@ -119,6 +119,7 @@ body {
 .intro-names img {
   position: relative;
   width: 100%;
+  max-width: 381px;
 }
 .intro-date {
   color: #595959;
@@ -146,6 +147,7 @@ body {
   position: relative;
   background-image: url("./resources/jr_intro.png");
   width: 100%;
+  max-width: 461px;
   height: 100%;
   background-size: 184%;
   background-position-x: center;
@@ -159,6 +161,10 @@ body {
   height: 100vh;
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .ceremony-img-1 {
   position: absolute;
@@ -169,6 +175,33 @@ body {
   position: absolute;
   width: 100%;
   bottom: 0;
+}
+.ceremony-wedding {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.ceremony-wedding-info {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.ceremony-wedding-info .title {
+  width: 100%;
+  font-size: 25px;
+  color: #bf9000;
+}
+.ceremony-wedding-info .place {
+  margin-bottom: 10px;
+  color: #595959;
+}
+.ceremony-wedding-info .button {
+  border: solid #595959;
+  border-radius: 25px;
 }
 
 .itinerary {

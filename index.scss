@@ -38,6 +38,7 @@ body {
         img {
             position: relative;
             width: 100%;
+            max-width: 381px;
         }
     }
     
@@ -70,6 +71,7 @@ body {
         position: relative;
         background-image: url("./resources/jr_intro.png");
         width: 100%;
+        max-width: 461px;
         height: 100%;
         background-size: 184%;
         background-position-x: center;
@@ -164,6 +166,10 @@ body {
     height: 100vh;
     position: relative;
     width: 100%;
+    display: flex;
+    align-items: center;
+overflow: hidden;
+    box-sizing: border-box;
     &-img-1{
         position: absolute;
         width: 100%;
@@ -173,6 +179,37 @@ body {
         position: absolute;
         width: 100%;
         bottom: 0;
+    }
+    &-wedding{
+        position: relative;
+        display: flex;
+        width: 100%;
+        &-info {
+            position: relative;
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+    
+            .title {
+                width: 100%;
+                font-size: 25px;
+                color: #bf9000;
+            }
+    
+            .place {
+                margin-bottom: 10px;
+                color: #595959;
+            }
+    
+            .button {
+                border: solid #595959;
+                border-radius: 25px;
+            }
+        }
+
     }
 
 }
