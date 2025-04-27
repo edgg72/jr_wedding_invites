@@ -237,13 +237,17 @@ body {
 .asistencia .container {
   width: 90%;
   display: flex;
+  justify-content: space-between;
   margin: 30px 0;
   color: #595959;
-  font-size: 20px;
+  opacity: 0.8;
+  font-size: 16px;
   text-align: justify;
 }
 .asistencia .container div {
-  padding: 0 10px;
+  width: 46%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .subtitle {
@@ -394,6 +398,9 @@ li::before {
 @media screen and (width < 395px) {
   .itinerary {
     align-items: start;
+  }
+  .asistencia div .confirm {
+    text-align: center;
   }
 }
 @media screen and (width < 395px) {
