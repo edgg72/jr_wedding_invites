@@ -44,10 +44,13 @@ body {
 .intro-names {
   margin: 0 40px 0 40px;
 }
-.intro-names img {
+.intro-names img,
+.intro-names picture source,
+.intro-names picture img {
   position: relative;
   width: 100%;
   max-width: 350px;
+  display: block;
 }
 .intro-date {
   color: #595959;
@@ -72,9 +75,12 @@ body {
   text-align: center;
   color: #bf9000;
 }
-.intro-img {
+.intro-img,
+.intro picture source,
+.intro picture img {
   position: relative;
   width: 100%;
+  display: block;
 }
 
 .ceremony {
@@ -89,11 +95,17 @@ body {
   margin-right: auto;
   max-width: 530px;
 }
-.ceremony-img-1 {
+.ceremony-img-1,
+.ceremony picture source,
+.ceremony picture img {
   width: 100%;
+  display: block;
 }
-.ceremony-img-2 {
+.ceremony-img-2,
+.ceremony picture source,
+.ceremony picture img {
   width: 100%;
+  display: block;
 }
 .ceremony-wedding {
   position: relative;
@@ -143,9 +155,12 @@ body {
   overflow: hidden;
   display: inline-block;
 }
-.itinerary .icon img {
+.itinerary .icon img,
+.itinerary .icon picture source,
+.itinerary .icon picture img {
   position: relative;
   width: 100%;
+  display: block;
 }
 .itinerary .icon-last .icon {
   width: 150px;
@@ -169,9 +184,12 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.itinerary img {
+.itinerary img,
+.itinerary picture source,
+.itinerary picture img {
   position: relative;
   width: 100%;
+  display: block;
 }
 
 .gifts {
@@ -208,9 +226,12 @@ body {
 .gifts-info div {
   width: 45%;
 }
-.gifts img {
+.gifts img,
+.gifts picture source,
+.gifts picture img {
   position: relative;
   width: 100%;
+  display: block;
 }
 .gifts .icono-regalo {
   max-width: 450px;
@@ -228,8 +249,11 @@ body {
   margin-right: auto;
   max-width: 530px;
 }
-.asistencia img {
+.asistencia img,
+.asistencia picture source,
+.asistencia picture img {
   width: 100%;
+  display: block;
 }
 .asistencia .title {
   width: 80%;
@@ -261,8 +285,11 @@ body {
   margin-right: auto;
   max-width: 530px;
 }
-.nos-vemos img {
+.nos-vemos img,
+.nos-vemos picture source,
+.nos-vemos picture img {
   width: 100%;
+  display: block;
 }
 .nos-vemos .title {
   width: 80%;

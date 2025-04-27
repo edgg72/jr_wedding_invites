@@ -46,10 +46,13 @@ body {
     &-names {
         margin: 0 40px 0 40px;
 
-        img {
+        img,
+        picture source,
+        picture img {
             position: relative;
             width: 100%;
             max-width: 350px;
+            display: block;
         }
     }
 
@@ -81,9 +84,12 @@ body {
         }
     }
 
-    &-img {
+    &-img,
+    picture source,
+    picture img {
         position: relative;
         width: 100%;
+        display: block;
     }
 }
 
@@ -100,12 +106,18 @@ body {
     margin-right: auto;
     max-width: 530px;
 
-    &-img-1 {
+    &-img-1,
+    picture source,
+    picture img {
         width: 100%;
+        display: block;
     }
 
-    &-img-2 {
+    &-img-2,
+    picture source,
+    picture img {
         width: 100%;
+        display: block;
     }
 
     &-wedding {
@@ -165,9 +177,12 @@ body {
         overflow: hidden;
         display: inline-block;
 
-        img {
+        img,
+        picture source,
+        picture img {
             position: relative;
             width: 100%;
+            display: block;
         }
 
         &-last {
@@ -200,9 +215,12 @@ body {
         align-items: center;
     }
 
-    img {
+    img,
+    picture source,
+    picture img {
         position: relative;
         width: 100%;
+        display: block;
     }
 }
 
@@ -244,9 +262,12 @@ body {
         }
     }
 
-    img {
+    img,
+    picture source,
+    picture img {
         position: relative;
         width: 100%;
+        display: block;
     }
 
     .icono-regalo {
@@ -267,8 +288,11 @@ body {
     margin-right: auto;
     max-width: 530px;
 
-    img {
+    img,
+    picture source,
+    picture img {
         width: 100%;
+        display: block;
     }
 
     .title {
@@ -305,8 +329,11 @@ body {
     margin-right: auto;
     max-width: 530px;
 
-    img {
+    img,
+    picture source,
+    picture img {
         width: 100%;
+        display: block;
     }
 
     .title {
