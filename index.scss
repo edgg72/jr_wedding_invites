@@ -3,6 +3,8 @@ body {
     padding: 0;
     position: relative;
     width: 100%;
+    max-width: 900px;
+    min-width: 360px;
 }
 
 .display-none {
@@ -18,15 +20,16 @@ body {
     box-sizing: border-box;
     position: relative;
     width: 100%;
-    max-width: 700px;
-    min-width: 310px;
-    height: 100vw;
+    height: 100vh;
     min-height: 750px;
-    &-info{
+    overflow: hidden;
+
+    &-info {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     &-wedding {
         font-size: 35px;
         font-style: italic;
@@ -37,13 +40,14 @@ body {
 
     &-names {
         margin: 0 40px 0 40px;
+
         img {
             position: relative;
             width: 100%;
             max-width: 381px;
         }
     }
-    
+
 
     &-date {
         color: #595959;
@@ -53,9 +57,12 @@ body {
         font-size: 25px;
         font-style: italic;
     }
+
     .corintio {
         position: relative;
-        width: 50%;
+        width: 65%;
+        font-size: 20px;
+
         &-text {
             text-align: center;
             color: #666666;
@@ -68,167 +75,84 @@ body {
         }
     }
 
-    &-image {
-        bottom: 0;
+    &-img {
         position: relative;
-        background-image: url("./resources/jr_intro.png");
         width: 100%;
-        max-width: 461px;
-        height: 100%;
-        background-size: 184%;
-        background-position-x: center;
-        background-repeat: no-repeat;
     }
-
-    /*&-2 {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        align-items: center;
-        padding-top: 45px;
-        padding-bottom: 45px;
-        box-sizing: border-box;
-        position: relative;
-        .male-leter {
-            position: absolute;
-            transform: translate(-42px, 0px);
-            font-size: 35px;
-        }
-
-        .female-leter {
-            position: absolute;
-            font-size: 35px;
-            transform: translate(-10px, -45px);
-
-        }
-
-
-        .audio-player {
-            display: flex;
-            justify-content: space-around;
-            width: 60%;
-            margin-bottom: 30px;
-
-            audio {
-                height: 40px;
-                width: 100%;
-                border-radius: o;
-            }
-        }
-
-        &-container {
-            margin-left: 25%;
-            position: relative;
-            border-left: solid #000;
-            padding-left: 20px;
-            height: 90%;
-            padding-right: 20px;
-
-            .rama {
-                background-image: url("./resources/ramas.png");
-                background-position: center;
-                background-size: cover;
-                position: absolute;
-                display: inline-block;
-                width: 30%;
-                height: 30%;
-                transform: translate(-30%, 45px) rotate(-90deg)
-            }
-
-
-            .wedding-info {
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 20px;
-
-                .title {
-                    width: 50%;
-                    font-size: 30px;
-                    color: #bf9000;
-                }
-
-                .place {
-                    margin-bottom: 10px;
-                    color: #595959;
-                }
-
-                .button {
-                    border: solid #000;
-                }
-            }
-        }
-    }*/
 }
-.ceremony{
+
+.ceremony {
     width: 100%;
-    max-width: 700px;
-    height: 100vh;
-    min-height: 750px;
     position: relative;
-    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-overflow: hidden;
+    overflow: hidden;
     box-sizing: border-box;
-    &-img-1{
-        position: absolute;
+
+    &-img-1 {
         width: 100%;
-        top: 0;
     }
-    &-img-2{
-        position: absolute;
+
+    &-img-2 {
         width: 100%;
-        bottom: 0;
     }
-    &-wedding{
+
+    &-wedding {
         position: relative;
         display: flex;
+        margin-bottom: 70px;
+        justify-content: space-evenly;
         width: 100%;
+
         &-info {
             position: relative;
-            width: 50%;
+            width: 40%;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
-    
+            justify-content: space-between;
+
             .title {
                 width: 100%;
                 font-size: 25px;
                 color: #bf9000;
             }
-    
+
             .place {
                 margin-bottom: 10px;
                 color: #595959;
             }
-    
+
             .button {
                 border: solid #595959;
                 border-radius: 25px;
+                justify-self: end;
             }
         }
 
     }
 
 }
+
 .itinerary {
+    position: relative;
     font-size: 35px;
     height: 100vh;
+    min-height: 750px;
     box-sizing: border-box;
     padding-top: 35px;
     color: #595959;
-
     &-text {
-        margin-left: 30px;
+        text-align: center;
+        color: #bf9000;
     }
 
     .list {
         font-size: 20px;
-        position: absolute;
+        position: relative;
         z-index: 100;
         margin-left: 10px;
 
@@ -237,6 +161,14 @@ overflow: hidden;
         }
     }
 
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    /*
     .image {
         position: absolute;
         background-image: url("./resources/jr_itinerary.png");
@@ -246,7 +178,7 @@ overflow: hidden;
         width: 100%;
         height: 62vh;
         bottom: 0px;
-    }
+    }*/
 }
 
 .button {
@@ -283,13 +215,15 @@ overflow: hidden;
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 400;
-  }
-  .eb-garamond-600 {
+}
+
+.eb-garamond-600 {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-  }
+}
+
 .ephesis-regular {
     font-family: "Ephesis", cursive;
     font-weight: 400;
@@ -341,4 +275,30 @@ audio::-webkit-media-controls-mute-button {
     display: none;
     width: 0;
 
+}
+
+//timeline
+
+ol {
+    margin: 1rem;
+}
+
+li {
+    border-left: #595959 solid 0.1rem;
+    display: flex;
+    padding: 0 0 1rem 2rem;
+    position: relative;
+    padding-bottom: 35px;
+}
+
+
+li::before {
+    background-color: #595959;
+    border-radius: 100%;
+    content: '';
+    height: 0.5rem;
+    width: 0.5rem;
+    position: absolute;
+    top: 9px;
+    left: -0.29rem;
 }
