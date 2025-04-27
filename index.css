@@ -29,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
 }
 .intro-wedding {
   font-size: 35px;
@@ -43,7 +44,7 @@ body {
 .intro-names img {
   position: relative;
   width: 100%;
-  max-width: 340px;
+  max-width: 350px;
 }
 .intro-date {
   color: #595959;
