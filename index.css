@@ -5,6 +5,7 @@ body {
   width: 100%;
   max-width: 900px;
   min-width: 360px;
+  margin: auto;
 }
 
 .display-none {
@@ -166,10 +167,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 .gifts-text {
   position: relative;
   width: 80%;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 .gifts .subtitles {
   display: flex;
@@ -181,6 +185,10 @@ body {
 }
 .gifts-info div {
   width: 45%;
+}
+.gifts .jr-img {
+  position: relative;
+  width: 100%;
 }
 
 .subtitle {
