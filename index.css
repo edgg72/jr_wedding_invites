@@ -10,7 +10,7 @@ body {
 }
 
 .intro {
-  padding-top: 40px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,7 +19,8 @@ body {
   position: relative;
   width: 100%;
   max-width: 700px;
-  height: 100vh;
+  min-width: 310px;
+  height: 100vw;
   min-height: 750px;
   /*&-2 {
       display: flex;
@@ -111,7 +112,7 @@ body {
   font-size: 35px;
   font-style: italic;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   color: #595959;
 }
 .intro-names {
@@ -125,7 +126,7 @@ body {
 .intro-date {
   color: #595959;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-align: center;
   font-size: 25px;
   font-style: italic;
@@ -151,7 +152,7 @@ body {
   max-width: 461px;
   height: 100%;
   background-size: 184%;
-  background-position: center;
+  background-position-x: center;
   background-repeat: no-repeat;
 }
 
