@@ -101,10 +101,9 @@ body {
     &-wedding {
         position: relative;
         display: flex;
-        margin-bottom: 70px;
         justify-content: space-evenly;
         width: 100%;
-
+        transform: translateY(-30px);
         &-info {
             position: relative;
             width: 40%;
@@ -114,12 +113,6 @@ body {
             align-items: center;
             margin-top: 20px;
             justify-content: space-between;
-
-            .title {
-                width: 100%;
-                font-size: 25px;
-                color: #bf9000;
-            }
 
             .place {
                 margin-bottom: 10px;
@@ -139,7 +132,6 @@ body {
 
 .itinerary {
     position: relative;
-    font-size: 35px;
     height: 100vh;
     min-height: 750px;
     box-sizing: border-box;
@@ -149,11 +141,6 @@ body {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    &-text {
-        text-align: center;
-        color: #bf9000;
-        width: 100%;
-    }
 
     .timeline-item {
         display: flex;
@@ -164,6 +151,7 @@ body {
         height: 85px;
         overflow: hidden;
         display: inline-block;
+
         img {
             position: relative;
             width: 100%;
@@ -190,12 +178,47 @@ body {
 
 .gifts {
     position: relative;
-    font-size: 35px;
+    font-size: 18px;
     height: 100vh;
     min-height: 750px;
     box-sizing: border-box;
     padding-top: 35px;
     color: #595959;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-text {
+        position: relative;
+        width: 80%;
+    }
+
+    .subtitles {
+        display: flex;
+        width: 100%;
+    }
+
+    &-info {
+        display: flex;
+        justify-content: space-evenly;
+
+        div {
+            width: 45%;
+        }
+    }
+}
+
+.subtitle {
+    width: 100%;
+    font-size: 25px;
+    color: #bf9000;
+}
+
+section .title {
+    text-align: center;
+    color: #bf9000;
+    width: 100%;
+    font-size: 35px;
 }
 
 .button {
@@ -322,15 +345,15 @@ li::before {
 }
 
 .dotted-border {
-  border: none;
-  padding: 4px;
-  width: 5px;
-  background-image: radial-gradient(#595959 1px, transparent 2px);
-  background-size: 10px 10px;
-  background-repeat: repeat;
-  background-position: 0 0;
-  box-sizing: border-box;
-  margin-top: 5px;
+    border: none;
+    padding: 4px;
+    width: 5px;
+    background-image: radial-gradient(#595959 0.6px, transparent 1px);
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    background-position: 0 0;
+    box-sizing: border-box;
+    margin-top: 5px;
 }
 
 @media screen and (width < 395px) {
