@@ -139,7 +139,6 @@ body {
 
 .itinerary {
     position: relative;
-    height: 100vh;
     min-height: 750px;
     box-sizing: border-box;
     padding-top: 35px;
@@ -210,7 +209,6 @@ body {
 .gifts {
     position: relative;
     font-size: 18px;
-    height: 100vh;
     min-height: 750px;
     box-sizing: border-box;
     padding-top: 35px;
@@ -260,7 +258,6 @@ body {
 .asistencia {
     position: relative;
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -459,6 +456,14 @@ li::before {
 @media screen and (width < 395px) {
     .itinerary {
         align-items: start;
+    }
+}
+
+@media screen and (width < 395px) {
+    .itinerary {
+        ol li div{
+            padding-right: 26px;
+        }
     }
 }
 
