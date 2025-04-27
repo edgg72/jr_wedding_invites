@@ -250,6 +250,58 @@ body {
   margin-bottom: auto;
 }
 
+.nos-vemos {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 530px;
+}
+.nos-vemos img {
+  width: 100%;
+}
+.nos-vemos .title {
+  width: 80%;
+  transform: translateY(-30px);
+}
+.nos-vemos .text {
+  width: 80%;
+}
+.nos-vemos .countdown {
+  padding: 0 0 50px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #595959;
+  font-size: 18px;
+}
+.nos-vemos .countdown #days,
+.nos-vemos .countdown #hours,
+.nos-vemos .countdown #minutes,
+.nos-vemos .countdown #seconds {
+  font-size: 32px;
+}
+.nos-vemos .countdown .clock {
+  display: flex;
+  justify-content: center;
+  font-family: "Quattrocento", serif;
+  /*& > .time-box + .time-box{
+      border-left: solid #000;
+  }*/
+}
+.nos-vemos .countdown .clock .time-box {
+  padding: 0 10px 0 10px;
+}
+.nos-vemos .countdown .clock .time-box div {
+  text-align: center;
+  opacity: 0.8;
+}
+
 .subtitle {
   width: 100%;
   font-size: 25px;
@@ -274,57 +326,17 @@ section .title {
   cursor: pointer;
 }
 
-.golden-text {
-  background: linear-gradient(#fff8dc, #f5d76e, #e6b800, #c49102, #f5d76e, #fff8dc);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-
 .eb-garamond-400 {
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  opacity: 0.9;
 }
 
 .eb-garamond-600 {
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 600;
-  font-style: normal;
-}
-
-.ephesis-regular {
-  font-family: "Ephesis", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.cinzel-decorative-regular {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.cinzel-decorative-bold {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.cinzel-decorative-black {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.cormorant-300 {
-  font-family: "Cormorant", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
   font-style: normal;
 }
 
@@ -409,7 +421,8 @@ li::before {
   }
 }
 @media screen and (width > 464px) {
-  .intro, .itinerary {
+  .intro,
+  .itinerary {
     height: auto;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -5,6 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
+    <script src="/index.js"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./index.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -153,6 +154,39 @@
         </div>
         <img src="./resources/jr_asistencia_2.jpeg" alt="">
     </section>
+    <section class="nos-vemos">
+        <img src="./resources/jr_nos_vemos_1.jpeg" alt="">
+        <div class="title eb-garamond-400"><strong>NOS VEMOS EN</strong></div>
+        <div>
+            <section class="countdown">
+                <div class="clock">
+                    <div class="clock-days time-box">
+                        <div id="days"></div>
+                        <div class="eb-garamond-400"> Dias</div>
+                    </div>
+                    <div class="clock-hours time-box">
+                        <div id="hours"></div>
+                        <div class="eb-garamond-400"> Horas</div>
+                    </div>
+                    <div class="clock-minutes time-box">
+                        <div id="minutes"></div>
+                        <div class="eb-garamond-400"> Minutos</div>
+                    </div>
+                    <div class="clock-seconds time-box">
+                        <div id="seconds"></div>
+                        <div class="eb-garamond-400"> Segundos</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="text eb-garamond-400">Con mucha ilusión queremos vivir este momento rodeados de personas que han
+            formado parte de nuestra historia.
+            Será un honor contar con tu presencia.
+        </div>
+        <div class="subtitle eb-garamond-400">¡TE ESPERAMOS!
+        </div>
+        <img src="./resources/jr_nos_vemos_2.jpeg" alt="">
+    </section>
     <script>
         function playSong(songUrl) {
             const audioPlayer = document.getElementById('audio');
@@ -161,8 +195,8 @@
         }
         function llegar(lugar) {
 
-          const url = lugar === 1 ? "https://maps.app.goo.gl/BpZL8Q9ga13GMBJN7" : "https://maps.app.goo.gl/atgJRcr7Bqn3aWB38";
-          window.open(url, "_blank");
+            const url = lugar === 1 ? "https://maps.app.goo.gl/BpZL8Q9ga13GMBJN7" : "https://maps.app.goo.gl/atgJRcr7Bqn3aWB38";
+            window.open(url, "_blank");
         }
     </script>
 </body>
