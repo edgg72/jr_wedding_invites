@@ -143,12 +143,13 @@
         <div class="container">
             <div class="eb-garamond-400">Celebrar nuestro amor es un sueño hecho realidad, y para que sea perfecto, nos
                 encantaría contar contigo en nuestra lista de invitados</div>
+                <div class="dotted-border"></div>
             <div class="confirm eb-garamond-400">Confirmanos tu asistencia. <br>
                 <strong>Fecha límite:</strong> 15 de Mayo
             </div>
         </div>
 
-        <div class="button eb-garamond-400">
+        <div class="button eb-garamond-400" onclick="confirmarAsistencia()">
             <strong>Si, Asistiré</strong>
         </div>
         <img src="./resources/jr_asistencia_2.jpeg" alt="">
@@ -162,6 +163,10 @@
         function llegar(lugar) {
 
           const url = lugar === 1 ? "https://maps.app.goo.gl/BpZL8Q9ga13GMBJN7" : "https://maps.app.goo.gl/atgJRcr7Bqn3aWB38";
+          window.open(url, "_blank");
+        }
+        function confirmarAsistencia() {
+          const url = "https://api.whatsapp.com/send?phone=+573015529578&text=Confirmo%20asistencia"
           window.open(url, "_blank");
         }
     </script>
