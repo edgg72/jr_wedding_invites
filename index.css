@@ -384,4 +384,9 @@ li::before {
   .itinerary {
     align-items: start;
   }
+}
+@media screen and (width > 464px) {
+  .intro {
+    height: auto;
+  }
 }/*# sourceMappingURL=index.css.map */
