@@ -45,7 +45,7 @@ body {
         img {
             position: relative;
             width: 100%;
-            max-width: 381px;
+            max-width: 340px;
         }
     }
 
@@ -61,9 +61,9 @@ body {
 
     .corintio {
         position: relative;
-        width: 65%;
+        width: 100%;
+        max-width: 397px;
         font-size: 20px;
-
         &-text {
             text-align: center;
             color: #666666;
@@ -79,6 +79,7 @@ body {
     &-img {
         position: relative;
         width: 100%;
+        max-width: 530px;
     }
 }
 
@@ -141,10 +142,13 @@ body {
 
     .timeline-item {
         display: flex;
+        position: relative;
+        width: 80%;
+        margin-left: auto;
     }
 
     .icon {
-        width: 85px;
+        width: 100px;
         height: 85px;
         overflow: hidden;
         display: inline-block;
@@ -153,22 +157,36 @@ body {
             position: relative;
             width: 100%;
         }
+        &-last{
+            .icon{
+
+                width: 150px;
+                transform: translateX(-30px);
+            }
+            ol{
+                transform: translateX(-50px);
+            }
+            li {
+                border-left:  solid 0.1rem;
+                padding-bottom: 0;
+              }
+        }
     }
 
     .list {
         font-size: 20px;
         position: relative;
         z-index: 100;
-        margin-left: 10px;
-        margin-top: 20px;
         width: 70%;
         min-width: 395px;
+        transform: translateY(45px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     img {
-        position: absolute;
-        bottom: 0;
-        right: 0;
+        position: relative;
         width: 100%;
     }
 }
@@ -371,7 +389,6 @@ li {
     position: relative;
     padding-bottom: 35px;
 }
-
 
 li::before {
     background-color: #595959;
