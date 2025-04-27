@@ -321,6 +321,18 @@ li::before {
     left: -0.29rem;
 }
 
+.dotted-border {
+  border: none;
+  padding: 4px;
+  width: 5px;
+  background-image: radial-gradient(#595959 1px, transparent 2px);
+  background-size: 10px 10px;
+  background-repeat: repeat;
+  background-position: 0 0;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
 @media screen and (width < 395px) {
     .itinerary {
         align-items: start;
